@@ -7,12 +7,19 @@
 //
 
 import UIKit
+import MediaPlayer
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, MPMediaPickerControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.view.layer.cornerRadius = 10
+        self.view.layer.masksToBounds = true
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +27,8 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    
+    
 
 }
 

@@ -12,6 +12,7 @@
 		BC73367820F1712E0028761F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC73367620F1712E0028761F /* Main.storyboard */; };
 		BC73367A20F171310028761F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC73367920F171310028761F /* Assets.xcassets */; };
 		BC73367D20F171310028761F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC73367B20F171310028761F /* LaunchScreen.storyboard */; };
+		BC73368520F1756F0028761F /* UIImageColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC73368420F1756F0028761F /* UIImageColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		BC73367920F171310028761F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC73367C20F171310028761F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC73367E20F171310028761F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC73368420F1756F0028761F /* UIImageColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIImageColors.swift; path = "../../../Downloads/UIImageColors-master/Sources/UIImageColors.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				BC73367220F1712E0028761F /* AppDelegate.swift */,
 				BC73367420F1712E0028761F /* ViewController.swift */,
 				BC73367620F1712E0028761F /* Main.storyboard */,
+				BC73368420F1756F0028761F /* UIImageColors.swift */,
 				BC73367920F171310028761F /* Assets.xcassets */,
 				BC73367B20F171310028761F /* LaunchScreen.storyboard */,
 				BC73367E20F171310028761F /* Info.plist */,
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC73368520F1756F0028761F /* UIImageColors.swift in Sources */,
 				BC73367520F1712E0028761F /* ViewController.swift in Sources */,
 				BC73367320F1712E0028761F /* AppDelegate.swift in Sources */,
 			);
