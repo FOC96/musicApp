@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC30DD1120F2485C009963E2 /* Artists.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC30DD1020F2485C009963E2 /* Artists.swift */; };
+		BC30DD1520F24B2B009963E2 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC30DD1420F24B2B009963E2 /* Artist.swift */; };
+		BC30DD1720F24C86009963E2 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC30DD1620F24C86009963E2 /* MainView.swift */; };
+		BC30DD1B20F24D47009963E2 /* Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC30DD1A20F24D47009963E2 /* Index.swift */; };
 		BC73367320F1712E0028761F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC73367220F1712E0028761F /* AppDelegate.swift */; };
 		BC73367520F1712E0028761F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC73367420F1712E0028761F /* ViewController.swift */; };
 		BC73367820F1712E0028761F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC73367620F1712E0028761F /* Main.storyboard */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BC30DD1020F2485C009963E2 /* Artists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Artists.swift; path = musicApp/Artists.swift; sourceTree = "<group>"; };
+		BC30DD1420F24B2B009963E2 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Artist.swift; path = musicApp/Design/Artist.swift; sourceTree = "<group>"; };
+		BC30DD1620F24C86009963E2 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainView.swift; path = Design/MainView.swift; sourceTree = "<group>"; };
+		BC30DD1A20F24D47009963E2 /* Index.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Index.swift; path = musicApp/Index.swift; sourceTree = "<group>"; };
 		BC73366F20F1712E0028761F /* musicApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = musicApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC73367220F1712E0028761F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC73367420F1712E0028761F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,6 +48,9 @@
 		BC73366620F1712E0028761F = {
 			isa = PBXGroup;
 			children = (
+				BC30DD1A20F24D47009963E2 /* Index.swift */,
+				BC30DD1420F24B2B009963E2 /* Artist.swift */,
+				BC30DD1020F2485C009963E2 /* Artists.swift */,
 				BC73367120F1712E0028761F /* musicApp */,
 				BC73367020F1712E0028761F /* Products */,
 			);
@@ -59,6 +70,7 @@
 				BC73367220F1712E0028761F /* AppDelegate.swift */,
 				BC73367420F1712E0028761F /* ViewController.swift */,
 				BC73367620F1712E0028761F /* Main.storyboard */,
+				BC30DD1620F24C86009963E2 /* MainView.swift */,
 				BC73368420F1756F0028761F /* UIImageColors.swift */,
 				BC73367920F171310028761F /* Assets.xcassets */,
 				BC73367B20F171310028761F /* LaunchScreen.storyboard */,
@@ -139,7 +151,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC73368520F1756F0028761F /* UIImageColors.swift in Sources */,
+				BC30DD1B20F24D47009963E2 /* Index.swift in Sources */,
+				BC30DD1720F24C86009963E2 /* MainView.swift in Sources */,
 				BC73367520F1712E0028761F /* ViewController.swift in Sources */,
+				BC30DD1120F2485C009963E2 /* Artists.swift in Sources */,
+				BC30DD1520F24B2B009963E2 /* Artist.swift in Sources */,
 				BC73367320F1712E0028761F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
