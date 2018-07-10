@@ -7,17 +7,47 @@
 //
 
 import UIKit
+import MediaPlayer
+
+var selectedArtist : MPMediaItem?
+
+class ArtistCell: UITableViewCell {
+    @IBOutlet weak var artistImage: UIImageView!
+    @IBOutlet weak var artistName: UILabel!
+}
 
 class Artists: UITableViewController {
+    
+    var artistsArray = [MPMediaItem]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Uncomment the following line to preserve selection between presentations
-         self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+//         self.clearsSelectionOnViewWillAppear = false
+        
+        let query = MPMediaQuery.artists()
+        
+        var previous = ""
+        var cont = 0
+        
+        for i in query.items! {
+            if i.albumArtist != nil {
+                if cont > 0 {
+                    if previous != i.albumArtist {
+                        artistsArray.append(i)
+                    }
+                }
+                previous = i.albumArtist!
+            }
+            cont = cont+1
+        }
+        
+        self.navigationController?.navigationBar.isHidden = false
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.isHidden = false
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,24 +59,41 @@ class Artists: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 60
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return artistsArray.count
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "artistCell", for: indexPath) as! ArtistCell
+        
+        if artistsArray[indexPath.row]["artwork"] != nil {
+            cell.artistImage.image = artistsArray[indexPath.row].artwork?.image(at: CGSize(width: 100, height: 100))
+        } else {
+            cell.artistImage.image = #imageLiteral(resourceName: "artist")
+        }
+        cell.artistName.text = artistsArray[indexPath.row].albumArtist
+        
         return cell
     }
-    */
 
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        selectedArtist = artistsArray[indexPath.row]
+        
+        
+        performSegue(withIdentifier: "showArtistDetails", sender: self)
+    }
+    
+
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

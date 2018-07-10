@@ -11,12 +11,17 @@
 		BC30DD1520F24B2B009963E2 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC30DD1420F24B2B009963E2 /* Artist.swift */; };
 		BC30DD1720F24C86009963E2 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC30DD1620F24C86009963E2 /* MainView.swift */; };
 		BC30DD1B20F24D47009963E2 /* Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC30DD1A20F24D47009963E2 /* Index.swift */; };
+		BC30DD2320F26DD4009963E2 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC30DD2220F26DD4009963E2 /* Button.swift */; };
+		BC678FDD20F29C120044651F /* UIImageColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC678FDC20F29C120044651F /* UIImageColors.swift */; };
 		BC73367320F1712E0028761F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC73367220F1712E0028761F /* AppDelegate.swift */; };
 		BC73367520F1712E0028761F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC73367420F1712E0028761F /* ViewController.swift */; };
 		BC73367820F1712E0028761F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC73367620F1712E0028761F /* Main.storyboard */; };
 		BC73367A20F171310028761F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC73367920F171310028761F /* Assets.xcassets */; };
 		BC73367D20F171310028761F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC73367B20F171310028761F /* LaunchScreen.storyboard */; };
-		BC73368520F1756F0028761F /* UIImageColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC73368420F1756F0028761F /* UIImageColors.swift */; };
+		BC77F6A220F40BCA005D93E9 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC77F6A120F40BCA005D93E9 /* GradientView.swift */; };
+		BC8FBB3520F33C0700C49E55 /* AlbumDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8FBB3420F33C0700C49E55 /* AlbumDetails.swift */; };
+		BCDE4DB620F446DC00273FB5 /* ArtistAlbums.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDE4DB520F446DC00273FB5 /* ArtistAlbums.swift */; };
+		BCDE4DB820F473E300273FB5 /* AlbumDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDE4DB720F473E300273FB5 /* AlbumDesign.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,8 @@
 		BC30DD1420F24B2B009963E2 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Artist.swift; path = musicApp/Design/Artist.swift; sourceTree = "<group>"; };
 		BC30DD1620F24C86009963E2 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainView.swift; path = Design/MainView.swift; sourceTree = "<group>"; };
 		BC30DD1A20F24D47009963E2 /* Index.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Index.swift; path = musicApp/Index.swift; sourceTree = "<group>"; };
+		BC30DD2220F26DD4009963E2 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Button.swift; path = musicApp/Design/Button.swift; sourceTree = "<group>"; };
+		BC678FDC20F29C120044651F /* UIImageColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIImageColors.swift; path = /Users/fernandorc/Desktop/musicApp/UIImageColors.swift; sourceTree = "<absolute>"; };
 		BC73366F20F1712E0028761F /* musicApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = musicApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC73367220F1712E0028761F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC73367420F1712E0028761F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,7 +38,10 @@
 		BC73367920F171310028761F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC73367C20F171310028761F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC73367E20F171310028761F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BC73368420F1756F0028761F /* UIImageColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIImageColors.swift; path = "../../../Downloads/UIImageColors-master/Sources/UIImageColors.swift"; sourceTree = "<group>"; };
+		BC77F6A120F40BCA005D93E9 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GradientView.swift; path = /Users/fernandorc/Desktop/musicApp/GradientView.swift; sourceTree = "<absolute>"; };
+		BC8FBB3420F33C0700C49E55 /* AlbumDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetails.swift; sourceTree = "<group>"; };
+		BCDE4DB520F446DC00273FB5 /* ArtistAlbums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ArtistAlbums.swift; path = Controllers/ArtistAlbums.swift; sourceTree = "<group>"; };
+		BCDE4DB720F473E300273FB5 /* AlbumDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AlbumDesign.swift; path = musicApp/Design/AlbumDesign.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,9 +58,13 @@
 		BC73366620F1712E0028761F = {
 			isa = PBXGroup;
 			children = (
+				BCDE4DB720F473E300273FB5 /* AlbumDesign.swift */,
+				BC30DD2220F26DD4009963E2 /* Button.swift */,
 				BC30DD1A20F24D47009963E2 /* Index.swift */,
 				BC30DD1420F24B2B009963E2 /* Artist.swift */,
 				BC30DD1020F2485C009963E2 /* Artists.swift */,
+				BC77F6A120F40BCA005D93E9 /* GradientView.swift */,
+				BC678FDC20F29C120044651F /* UIImageColors.swift */,
 				BC73367120F1712E0028761F /* musicApp */,
 				BC73367020F1712E0028761F /* Products */,
 			);
@@ -70,8 +84,9 @@
 				BC73367220F1712E0028761F /* AppDelegate.swift */,
 				BC73367420F1712E0028761F /* ViewController.swift */,
 				BC73367620F1712E0028761F /* Main.storyboard */,
+				BCDE4DB520F446DC00273FB5 /* ArtistAlbums.swift */,
+				BC8FBB3420F33C0700C49E55 /* AlbumDetails.swift */,
 				BC30DD1620F24C86009963E2 /* MainView.swift */,
-				BC73368420F1756F0028761F /* UIImageColors.swift */,
 				BC73367920F171310028761F /* Assets.xcassets */,
 				BC73367B20F171310028761F /* LaunchScreen.storyboard */,
 				BC73367E20F171310028761F /* Info.plist */,
@@ -150,9 +165,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC73368520F1756F0028761F /* UIImageColors.swift in Sources */,
+				BC8FBB3520F33C0700C49E55 /* AlbumDetails.swift in Sources */,
 				BC30DD1B20F24D47009963E2 /* Index.swift in Sources */,
+				BCDE4DB620F446DC00273FB5 /* ArtistAlbums.swift in Sources */,
+				BCDE4DB820F473E300273FB5 /* AlbumDesign.swift in Sources */,
+				BC77F6A220F40BCA005D93E9 /* GradientView.swift in Sources */,
+				BC678FDD20F29C120044651F /* UIImageColors.swift in Sources */,
 				BC30DD1720F24C86009963E2 /* MainView.swift in Sources */,
+				BC30DD2320F26DD4009963E2 /* Button.swift in Sources */,
 				BC73367520F1712E0028761F /* ViewController.swift in Sources */,
 				BC30DD1120F2485C009963E2 /* Artists.swift in Sources */,
 				BC30DD1520F24B2B009963E2 /* Artist.swift in Sources */,

@@ -1,15 +1,15 @@
 //
-//  Artist.swift
+//  AlbumDesign.swift
 //  musicApp
 //
-//  Created by Fernando Ortiz Rico Celio on 7/8/18.
+//  Created by Fernando Ortiz Rico Celio on 7/9/18.
 //  Copyright © 2018 Fernando Ortiz Rico Celio. All rights reserved.
 //
 
 import UIKit
 
 @IBDesignable
-class Artist: UIImageView {
+class AlbumDesign: UIImageView {
 
     /*
     // Only override draw() if you perform custom drawing.
@@ -21,8 +21,8 @@ class Artist: UIImageView {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        self.layer.cornerRadius = self.bounds.size.height/2
-        self.layer.masksToBounds = true
+        self.layer.cornerRadius = 6
+        self.clipsToBounds = true
     }
 
 }

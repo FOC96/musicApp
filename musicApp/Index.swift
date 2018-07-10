@@ -26,19 +26,25 @@ class Index: UIViewController {
     
     @IBAction func connectAM(_ sender: Any) {
         SKCloudServiceController.requestAuthorization { (status : SKCloudServiceAuthorizationStatus) in
+
+            
             switch(status) {
             case .authorized:
-                print("AUTORIZADO")
+//                self.showAlert(title: "Authorized", message: "The deviced is linked to an Apple Music account", buttonTitle: "OK", buttonStyle: .default, buttonAction: ())
+                print("Authorized")
                 self.askPerm()
                 break;
             case .denied:
-                print("DENEGADO")
+                print("Denied")
+//                self.showAlert(title: "Denied", message: "The deviced is not linked to an Apple Music account", buttonTitle: "OK", buttonStyle: .default, buttonAction: ())
                 break;
             case .notDetermined:
-                print("Sin determinar")
+                print("Not determined")
+//                self.showAlert(title: "Not Determined", message: "This is weird", buttonTitle: "OK", buttonStyle: .default, buttonAction: ())
                 break;
             default:
-                print("Error")
+//                self.showAlert(title: "ERROR", message: "", buttonTitle: "OK", buttonStyle: .default, buttonAction: ())
+                print("ERROR")
                 break;
             }
         }
@@ -47,11 +53,31 @@ class Index: UIViewController {
     func askPerm() {
         controller.requestCapabilities { (capabilities : SKCloudServiceCapability, error) in
             if capabilities.contains(SKCloudServiceCapability.musicCatalogPlayback) {
-                print("The device allows playback of Apple Music catalog tracks.")
+//                self.showAlert(title: "Playback Allowed", message: "The device allows playback of Apple Music catalog tracks.", buttonTitle: "OK", buttonStyle: .default, buttonAction: ())
+                print("musicCatalogPlayback good")
+                self.showArtistsView()
             }
         }
     }
     
+    func showArtistsView() {
+        performSegue(withIdentifier: "showArtists", sender: self)
+    }
+    
+//    func showAlert(title: String, message: String, buttonTitle: String, buttonStyle : UIAlertActionStyle, buttonAction: ()) {
+//        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+//        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (cancel) in
+//            alert.dismiss(animated: true, completion: nil)
+//        }
+//        let mainAction = UIAlertAction(title: buttonTitle, style: buttonStyle) { (action) in
+//            alert.dismiss(animated: true, completion: {
+//                buttonAction
+//            })
+//        }
+//        alert.addAction(cancelAction)
+//        alert.addAction(mainAction)
+//        present(alert, animated: true, completion: nil)
+//    }
     
 
     /*

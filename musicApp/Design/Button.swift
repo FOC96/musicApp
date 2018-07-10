@@ -1,5 +1,5 @@
 //
-//  Artist.swift
+//  Button.swift
 //  musicApp
 //
 //  Created by Fernando Ortiz Rico Celio on 7/8/18.
@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable
-class Artist: UIImageView {
+class Button: UIButton {
 
     /*
     // Only override draw() if you perform custom drawing.
@@ -21,8 +21,11 @@ class Artist: UIImageView {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        self.layer.cornerRadius = self.bounds.size.height/2
+        self.layer.cornerRadius = 8
         self.layer.masksToBounds = true
+        self.layer.backgroundColor = UIColor(red:1.000000, green:1.000000, blue:1.000000, alpha:0.05).cgColor
     }
+    
+    
 
 }
